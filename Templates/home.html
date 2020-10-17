@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+{%block content%}
+
+<html lang="en">
+<head>
+    <title>Home</title>
+</head>
+<body>
+    
+<form action="add" method="POST">
+    {% csrf_token %}
+    Enter A:<input type="text" name="a"><br>
+    Enter B:<input type="text" name="b"><br>
+    <input type="submit"  value="Add"> 
+</form>  
+
+
+
+{%endblock%}
+
+</body>
+
+<!--  <h1>Om Ganesaya namha</h1>
+<h2>My name is {{name}}</h2>
+<h2>Age:{{age}}</h2> -->
+
+
+
+</html>
